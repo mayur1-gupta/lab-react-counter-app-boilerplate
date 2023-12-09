@@ -28,13 +28,13 @@ render(){
     <>
       <div className='body'>
           <div>
-           <h1>Counter App</h1> 
+           <h1 className='appname'>Counter App</h1> 
           </div>
           <div className='count'>{this.state.count}</div>
           <div>
-            <button onClick={this.Increase}>Increase</button>
-            <button onClick={this.Decrease}>Decrease</button>
-            <button onClick={this.Reset}>Reset</button>
+            <button onClick={this.Increase} className='inc'>+</button>
+            <button onClick={this.Decrease} className='dec'>-</button>
+            <button onClick={this.Reset} className='reset'>Reset</button>
           </div>
       </div>
     </>
